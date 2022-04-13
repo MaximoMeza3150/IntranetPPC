@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drenaje de puntos estancos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+          <a class="navbar-brand ps-2" href="../../index.html" id="titulo_version">Intranet de relevamiento V1.0</a>
+        </nav>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">Drenaje de puntos estancos</a>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active navbar-brand ps-2" href="../../index.html">Retornar</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="container">
+        <h3 class="pt-4">Áreas</h3>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Área</th>
+                <th scope="col">Última Actualización</th>
+                <th scope="col">Observado</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Criogénica 1 y 2</td>
+                <td id="fechaAct01">09/08/2021</td>
+                <td>
+                    <input class="form-check-input ms-4"  type="checkbox" value="estanco_observado"> 
+                </td>
+                <td>
+                  <a href="./form_estancos_CRYO1y2.html"><button type="button" class="btn-sm ps-3 pe-3 btn-success">Insertar</button></a>
+                  <a href="./list_estancos_CRYO1.html"><button type="button" id="Hist_Estancos_CRYO1"class="btn-sm ps-3 pe-3 btn-primary">Historial</button></a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Criogénica 3 y 4</td>
+                <td>09/08/2021</td>
+                <td>
+                    <input class="form-check-input ms-4"  type="checkbox" value="estanco_observado"> 
+                </td>
+                <td>
+                  <a href="./form_estancos_CRYO3y4.html"><button type="button" class="btn-sm ps-3 pe-3 btn-success">Insertar</button></a>
+                  <a href="./list_estancos_CRYO3y4.html"><button type="button" id="Hist_Estancos_CRYO3y4"class="btn-sm ps-3 pe-3 btn-primary">Historial</button></a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Criogénica 5 y CSU 3</td>
+                <td>09/08/2021</td>
+                <td>
+                    <input class="form-check-input ms-4"  type="checkbox" value="estanco_observado"> 
+                </td>
+                <td>
+                  <a href="./form_estancos_CRYO5yCSU3.html"><button type="button" class="btn-sm ps-3 pe-3 btn-success">Insertar</button></a>
+                  <a href="./list_estancos_CRYO5yCSU3.html"><button type="button" id="Hist_Estancos_CRYO5yCSU3"class="btn-sm ps-3 pe-3 btn-primary">Historial</button></a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Estabilización 1 y 2</td>
+                <td>09/08/2021</td>
+                <td>
+                    <input class="form-check-input ms-4"  type="checkbox" value="estanco_observado"> 
+                </td>
+                <td>
+                  <a href="./form_estancos_CSU.html"><button type="button" class="btn-sm ps-3 pe-3 btn-success">Insertar</button></a>
+                  <a href="./list_estancos_CSU.html"><button type="button" class="btn-sm ps-3 pe-3 btn-primary">Historial</button></a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Turbocompresión 1</td>
+                <td>09/08/2021</td>
+                <td>
+                    <input class="form-check-input ms-4"  type="checkbox" value="estanco_observado"> 
+                </td>
+                <td>
+                  <a href="./form_estancos_TC1.html"><button type="button" class="btn-sm ps-3 pe-3 btn-success">Insertar</button></a>
+                  <a href="./list_estancos_TC1.html"><button type="button" class="btn-sm ps-3 pe-3 btn-primary">Historial</button></a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Turbocompresión 2</td>
+                <td>09/08/2021</td>
+                <td>
+                    <input class="form-check-input ms-4"  type="checkbox" value="estanco_observado"> 
+                </td>
+                <td>
+                  <a href="./form_estancos_TC2.html"><button type="button" class="btn-sm ps-3 pe-3 btn-success">Insertar</button></a>
+                  <a href="./list_estancos_TC2.html"><button type="button" class="btn-sm ps-3 pe-3 btn-primary">Historial</button></a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Servicios A</td>
+                <td>09/08/2021</td>
+                <td>
+                    <input class="form-check-input ms-4"  type="checkbox" value="estanco_observado"> 
+                </td>
+                <td>
+                  <a href="./form_estancos_SSA.html"><button type="button" class="btn-sm ps-3 pe-3 btn-success">Insertar</button></a>
+                  <a href="./list_estancos_SSA.html"><button type="button" class="btn-sm ps-3 pe-3 btn-primary">Historial</button></a>
+                </td>
+              </tr>
+             
+              <tr>
+                <th scope="row">8</th>
+                <td>Servicios B</td>
+                <td>09/08/2021</td>
+                <td>
+                    <input class="form-check-input ms-4"  type="checkbox" value="estanco_observado"> 
+                </td>
+                <td>
+                  <a href="./form_estancos_SSB.html"><button type="button" class="btn-sm ps-3 pe-3 btn-success">Insertar</button></a>
+                  <a href="./list_estancos_SSB.html"><button type="button" class="btn-sm ps-3 pe-3 btn-primary">Historial</button></a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>Tratamiento de agua</td>
+                <td>09/08/2021</td>
+                <td>
+                    <input class="form-check-input ms-4"  type="checkbox" value="estanco_observado"> 
+                </td>
+                <td>
+                  <a href="./form_estancos_PTAR.html"><button type="button" class="btn-sm ps-3 pe-3 btn-success">Insertar</button></a>
+                  <a href="./list_estancos_PTAR.html"><button type="button" class="btn-sm ps-3 pe-3 btn-primary">Historial</button></a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>WHC</td>
+                <td>09/08/2021</td>
+                <td>
+                    <input class="form-check-input ms-4"  type="checkbox" value="estanco_observado"> 
+                </td>
+                <td>
+                  <a href="./form_estancos_WHC.html"><button type="button" class="btn-sm ps-3 pe-3 btn-success">Insertar</button></a>
+                  <a href="./list_estancos_WHC.html"><button type="button" class="btn-sm ps-3 pe-3 btn-primary">Historial</button></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+</body>
+</html>

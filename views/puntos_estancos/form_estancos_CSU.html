@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertar puntos estancos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand ps-2" href="../../index.html" id="titulo_version">Intranet de relevamiento V1.0</a>
+        </nav>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" >Insertar formato de puntos estancos - Estabilización 1 y 2, CDU y Slug Catcher</a>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active navbar-brand ps-2" href="../puntos_estancos/puntos_estancos.html">Retornar</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="container">
+            <form class="container mt-3" id="form_estancos_CSU">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Operador</label>
+                    <input type="text" class="form-control" id="nombreOperador4" autofocus placeholder="Nombre del operador">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Fecha de realización</label>
+                    <input class="form-control" type="date" min="2021-11-01" id="fechaDrenaje4"></input>
+                </div>
+                <br>
+                <h4>Estabilización 1</h4>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">P&ID</th>
+                        <th scope="col">Detalle</th>
+                        <th scope="col">Ejecutado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">CSU1-002</th>
+                        <td>PCAM-340-PL-Y-3001</td>
+                        <td>Abrir purga controlada a drenaje abierto.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_002">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-005</th>
+                        <td>PCAM-340-PL-Y-3001</td>
+                        <td>Enviar por batch a drenaje cerrado y luego purga en batch a drenaje abierto.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_005">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-006</th>
+                        <td>PCAM-340-PL-Y-3001</td>
+                        <td>Enviar por batch a drenaje cerrado y luego purga en batch a drenaje abierto.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_006">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-007</th>
+                        <td>PCAM-340-PL-Y-3001</td>
+                        <td>Enviar por batch a drenaje cerrado y luego purga en batch a drenaje abierto.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_007">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-008</th>
+                        <td>PCAM-340-PL-Y-3001</td>
+                        <td>Abrir restrictivamente las 2 válvulas manuales hasta que haya un flujo mínimo 
+                            <br>(incluye DL#13,14,43 no prioritarias)</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_008">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-009</th>
+                        <td>PCAM-340-PL-Y-3001</td>
+                        <td>Abrir by-pass de la LV-2100 lentamente (incluye DL#2,3 no prioritarias)</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_009">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-010</th>
+                        <td>PCAM-340-PL-Y-3001</td>
+                        <td>Enviar por batch a drenaje cerrado y luego purga en batch a drenaje abierto </td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_010">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-012</th>
+                        <td>PCAM-340-PL-Y-3002</td>
+                        <td>Ecualizar instrumento. Coordinar con Sala de Control, ecualizar PDT-42011</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_012">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-013</th>
+                        <td>PCAM-340-PL-Y-3002</td>
+                        <td>Abrir purga en batch controlada a drenaje abierto</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_013">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-014</th>
+                        <td>PCAM-340-PL-Y-3002</td>
+                        <td>Enviar por batch a drenaje cerrado y luego purga en batch a drenaje abierto </td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_014">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-015</th>
+                        <td>PCAM-340-PL-Y-3002</td>
+                        <td>Enviar por batch a drenaje cerrado </td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_015">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-016</th>
+                        <td>PCAM-340-PL-Y-3002</td>
+                        <td>Purgar LG-12101 a drenaje abierto (incluye DL#23 no prioritaria)</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_016">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-017</th>
+                        <td>PCAM-340-PL-Y-3002</td>
+                        <td>Purgar a drenaje abierto LT-2170, comunicar a panelista (incluye DL#27 no prioritaria). 
+                            <br>No es prioritario, tomas hacia instrumento LT-2170. Se realiza cada mantto preventivo.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_017">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-018</th>
+                        <td>PCAM-340-PL-Y-3002</td>
+                        <td>Enviar por batch a drenaje cerrado y luego purga en batch a drenaje abierto.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_018">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-020</th>
+                        <td>PCAM-340-PL-Y-3002</td>
+                        <td>Purgar LG-12101 a drenaje abierto. Coordinar con Sala de Control, 
+                            <br>Aislar el visor para no alterar el proceso y evitar la activación del LSHH-2120 y LT-2121.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_020">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-026</th>
+                        <td>PCAM-340-PL-Y-304</td>
+                        <td>Abrir by-pass de la LV-5910 de forma controlada y comunicar al panelista 
+                            <br>antes de la maniobra (incluye DL#13)</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_026">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-027</th>
+                        <td>PCAM-340-PL-Y-304</td>
+                        <td>Solicitar a panelista que coloque la LV-5910 en manual y luego purgar el LT-5910.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_027">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-028</th>
+                        <td>PCAM-340-PL-Y-304</td>
+                        <td>Purgar LG-5911 de forma controlada. Coordinar con Sala de Control, aislar el visor 
+                            <br>para no aterar el proceso (evitar alteraciones de LT-5912)</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_028">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-029</th>
+                        <td>PCAM-340-PL-Y-304</td>
+                        <td>Abrir by-pass de PSV-5910 de forma controlada.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_029">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-030</th>
+                        <td>PCAM-340-PL-Y-304</td>
+                        <td>Abrir by-pass de los filtros FAJ-16390A/B de forma controlada.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_030">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-031</th>
+                        <td>PCAM-340-PL-Y-304</td>
+                        <td>Purgar por batch a drenaje cerrado y luego a drenaje abierto de 
+                            <br>forma controlada (incluye DL#21 no prioritaria)</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_031">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU1-032</th>
+                        <td>PCAM-340-PL-Y-304</td>
+                        <td>Purgar por batch a drenaje cerrado y luego a drenaje abierto de
+                            <br>forma controlada (incluye DL#23 no prioritaria)</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU1_032">
+                            </div>
+                        </td>
+                      </tr>
+                  </table>
+                  <br>
+                  <h4>Estabilización 2</h4>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">P&ID</th>
+                        <th scope="col">Detalle</th>
+                        <th scope="col">Ejecutado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">CSU2-001</th>
+                        <td>PCAM-340-PL-Y-341</td>
+                        <td>Ecualizar instrumento FIT-12100 (agua de bota)</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_001">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-002</th>
+                        <td>PCAM-340-PL-Y-341</td>
+                        <td>Ecualizar instrumento, ecualizar PDIT-12190A</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_002">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-003</th>
+                        <td>PCAM-340-PL-Y-341</td>
+                        <td>Abrir purga controlada a drenaje abierto.  DL#22 es toma de baja de PDIT-12190B.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_003">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-004</th>
+                        <td>PCAM-340-PL-Y-341</td>
+                        <td>Solicitar a panelista que inhiba LSLL-12101, abrir a drenaje abierto (incluye DL#48 no prioritaria).
+                            <br>DL#17 es toma de alta de LSLL-12101 en bota de trifásico. DL#48 es toma de baja de LSLL-12101.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_004">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-006</th>
+                        <td>PCAM-340-PL-Y-341</td>
+                        <td>Ecualizar instrumento. FIT-12104 (condensado a TK Flash), lazo en MANUAL.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_006">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-007</th>
+                        <td>PCAM-340-PL-Y-341</td>
+                        <td>Solicitar a panelista que inhiba LSHH-12102, luego abrir purga controlada a drenaje abierto.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_007">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-008</th>
+                        <td>PCAM-340-PL-Y-341</td>
+                        <td>Purgar LG-12101 a drenaje abierto (incluye DL#63 no prioritaria).</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_008">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-009</th>
+                        <td>PCAM-340-PL-Y-341</td>
+                        <td>Purgar LG-12103 a drenaje abierto (incluye DL#60 no prioritaria)</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_009">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-010</th>
+                        <td>PCAM-340-PL-Y-341</td>
+                        <td>Solicitar a panelista que inhiba LSLL-12103, luego abrir purga controlada a drenaje abierto.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_010">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-011</th>
+                        <td>PCAM-340-PL-Y-341</td>
+                        <td>Abrir purga controlada a drenaje abierto.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_011">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-012</th>
+                        <td>PCAM-340-PL-Y-342-1</td>
+                        <td>Purgar LG-12103 a drenaje abierto.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_012">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-014</th>
+                        <td>PCAM-340-PL-Y-342-1</td>
+                        <td>Solicitar a panelista que inhiba LSLL-12122, luego abrir purga controlada a drenaje abierto.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_014">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-015</th>
+                        <td>PCAM-340-PL-Y-342-1</td>
+                        <td>Abrir purga controlada a drenaje abierto. Inhibición operativa a LSLL-12190B.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_015">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-017</th>
+                        <td>PCAM-340-PL-Y-342-2</td>
+                        <td>Abrir purga controlada a drenaje abierto. 
+                            <br>Ejecutar drenado sólo durante maniobras de cambio de elementos del filtro.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_017">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-018</th>
+                        <td>PCAM-340-PL-Y-342-2</td>
+                        <td>Abrir purga controlada a drenaje abierto. 
+                            <br>Ejecutar drenado sólo durante maniobras de cambio de elementos del filtro.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_018">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-021</th>
+                        <td>PCAM-340-PL-Y-342-2</td>
+                        <td>Abrir purga controlada a drenaje abierto. Realizar cuando el filtro FAJ 12185A NO esta en operación.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_021">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-022</th>
+                        <td>PCAM-340-PL-Y-342-2</td>
+                        <td>Enviar por batch al drenaje cerrado</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_022">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-023</th>
+                        <td>PCAM-340-PL-Y-342-2</td>
+                        <td>Solicitar a panelista que inhiba LSLL-12190B, luego abrir purga controlada a drenaje abierto
+                            <br>(incluye DL#23 no prioritaria). Inhibiciójn operativa a LSLL-12190B</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_023">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-024</th>
+                        <td>PCAM-340-PL-Y-342-2</td>
+                        <td>Abrir by-pass LV-12190 (incluye DL#36 no prioriaria).</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_024">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-027</th>
+                        <td>PCAM-340-PL-Y-342-2</td>
+                        <td>Abrir purga controlada a drenaje abierto. DL#27 se ubica en by pass de LV-12122.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_027">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-028</th>
+                        <td>PCAM-340-PL-Y-342-2</td>
+                        <td>Ecualizar instrumento PDIT-12190A (incluye DL#14 no prioritaria).</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_028">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-029</th>
+                        <td>PCAM-340-PL-Y-342-2</td>
+                        <td>Ecualizar instrumento PDIT-12190B (incluye DL#22 no prioritaria).</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_029">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSU2-031</th>
+                        <td>PCAM-340-PL-Y-342-2</td>
+                        <td>Requiere facilidad para no purgar/ventear atmosféricamente.
+                            <br>DL#20 es toma de alta de PDIT-12190B</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CSU2_031">
+                            </div>
+                        </td>
+                      </tr>
+                  </table>
+                  <br>
+                  <h4>CDU</h4>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">P&ID</th>
+                        <th scope="col">Detalle</th>
+                        <th scope="col">Ejecutado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">CDU-001</th>
+                        <td>23219-101 1 OF 4</td>
+                        <td>Requiere apertura de By-pass.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CDU_001">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CDU-003</th>
+                        <td>23219-101 1 OF 4</td>
+                        <td>Se requiere ecualizar PDIT-13000.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CDU_003">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CDU-010</th>
+                        <td>23219-101 2 OF 4</td>
+                        <td>Cuenta con facilidades para drenar a copa.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CDU_010">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CDU-013</th>
+                        <td>23219-101 3 OF 4</td>
+                        <td>Sólo realizar cuando el compresor se encuentra detenido para evitar perturbaciones en el proceso.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CDU_013">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CDU-014</th>
+                        <td>23219-101 3 OF 4</td>
+                        <td>Sólo realizar cuando el compresor se encuentra detenido para evitar perturbaciones en el proceso.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CDU_014">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CDU-015</th>
+                        <td>23219-101 3 OF 4</td>
+                        <td>Sólo realizar cuando el compresor se encuentra detenido.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CDU_015">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CDU-020</th>
+                        <td>23219-101 4 OF 4</td>
+                        <td>Sólo realizar durante maniobras de cambio de elementos del filtro.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CDU_020">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CDU-021</th>
+                        <td>23219-103 5 OF 5</td>
+                        <td>Sólo realizar durante maniobras de cambio de elementos del filtro.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CDU_021">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CDU-022</th>
+                        <td>23219-103 5 OF 5</td>
+                        <td>Sólo realizar durante maniobras de cambio de elementos del filtro.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="CDU_022">
+                            </div>
+                        </td>
+                      </tr>
+                      <th scope="row">CDU-023</th>
+                      <td>23219-103 3 OF 5</td>
+                      <td>Cuenta con facilidades para drenar a copa.</td>
+                      <td>
+                          <div class="form-check form-switch mb-3">
+                              <input class="form-check-input" type="checkbox" id="CDU_023">
+                          </div>
+                      </td>
+                    </tr>
+                    <th scope="row">CDU-024</th>
+                    <td>23219-103 2 OF 5</td>
+                    <td>Cuenta con facilidades para drenar a copa.</td>
+                    <td>
+                        <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" id="CDU_024">
+                        </div>
+                    </td>
+                  </tr>      
+                </table>
+                <br>
+                <h4>Slug Catcher</h4>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">P&ID</th>
+                        <th scope="col">Detalle</th>
+                        <th scope="col">Ejecutado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">SC-015</th>
+                        <td>PCSE-310-PL-Y-498</td>
+                        <td>Se puede drenar abiendo válvula de 2" de presurizacion del filtro FAJ-22010. 
+                            <br>Presión de trabajo 350 psig</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="SC_015">
+                            </div>
+                        </td>
+                      </tr>
+                </table>
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input" type="checkbox" id="obs_CSU">
+                    <label class="form-check-label" for="obs_CSU">Presenta observaciones</label>
+                </div>
+                <div class="mb-3 mt-3">
+                    <textarea 
+                        class="form-control" id="text_obs_CSU" rows="4" 
+                        autofocus autocomplete="on" maxlength="255" placeholder="Colocar las observaciones encontradas o motivos por lo que no se pudo realizar el drenaje. Máximo 255 caracteres."></textarea>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto mb-5">
+                    <button class="btn btn-primary me-md-2" type="submit" value="enviar_form_CSU" role="button">Guardar</button>
+                    <a class="btn btn-secondary  me-md-2" type="button" href="javascript: history.back()">Cancelar</a>
+                </div>
+            </form>
+            <!-- <h4>Formatos</h4>
+            <aside>
+                <embed src="../../files/PDF Dead Leg/Consolidado Dead Leg - CSU1.pdf" type="application/pdf" width="100%" height="800px" />
+                <hr>
+                <embed src="../../files/PDF Dead Leg/Consolidado Dead Leg - CSU2.pdf" type="application/pdf" width="100%" height="800px" />
+                <hr>
+                <embed src="../../files/PDF Dead Leg/Consolidado Dead Leg - CDU.pdf" type="application/pdf" width="100%" height="800px" />
+                <hr>
+                <embed src="../../files/PDF Dead Leg/Consolidado Dead Leg - SC.pdf" type="application/pdf" width="100%" height="800px" />
+                <hr>
+            </aside> -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../../js/Estancos/CRUD_estancos_CSU.js"></script>
+</body>
+</html>

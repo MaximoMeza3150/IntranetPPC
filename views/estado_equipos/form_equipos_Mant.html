@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado del equipo-Operaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand ps-2" href="../../index.html" id="titulo_version">Intranet de relevamiento V1.0</a>
+        </nav>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Edición de estado del equipo - Mantenimiento</a>
+        </div>
+    </nav>
+    <main >
+        <form class="container">
+            <div class="mb-3 mt-3">
+                <label class="form-label"  name="tagname_equipo">PAY-3220</label>
+                <textarea 
+                    class="form-control" id="exampleFormControlTextarea1" rows="6" 
+                    autofocus autocomplete="on" maxlength="255" placeholder="Detalle del estado actual del equipo."></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Estado actual del equipo.</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"checked>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Sin observaciones
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Pendiente prueba funcional
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" >
+                    <label class="form-check-label" for="flexRadioDefault3">
+                        Con observaciones en medio de proceso
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" >
+                    <label class="form-check-label" for="flexRadioDefault4">
+                        Con observaciones en medio de servicio
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" >
+                    <label class="form-check-label" for="flexRadioDefault5">
+                        Fuera de servicio con intervención programada
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" >
+                    <label class="form-check-label" for="flexRadioDefault6">
+                        Fuera de servicio a la espera de respuestos
+                    </label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Nombre del inspector">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Fecha de actualización</label>
+                <input type="date" class="form-control" required>
+            </div>
+
+            <div class="d-grid gap-2 col-6 mx-auto mb-3">
+                <a class="btn btn-primary me-md-2" type="button" href="javascript: history.back()" role="button">Guardar</a>
+                <a class="btn btn-secondary  me-md-2" type="button" href="javascript: history.back()" role="button">Cancelar</a>
+            </div>
+        </form>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

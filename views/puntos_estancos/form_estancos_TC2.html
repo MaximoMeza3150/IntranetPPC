@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertar puntos estancos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand ps-2" href="../../index.html" id="titulo_version">Intranet de relevamiento V1.0</a>
+        </nav>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" >Insertar formato de puntos estancos - TCNP 5, Siemens 6 y 7</a>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active navbar-brand ps-2" href="../puntos_estancos/puntos_estancos.html">Retornar</a>
+          </li>
+      </ul>
+    </nav>
+    <main class="container">
+            <form class="container mt-3" id="form_estancos_TC2">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Operador</label>
+                    <input type="text" class="form-control" id="nombreOperador6" autofocus placeholder="Nombre del operador">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Fecha de realización</label>
+                    <input class="form-control" type="date" min="2021-11-01" id="fechaDrenaje6"></input>
+                </div>
+                <br>
+                <h4>TCNP 5</h4>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">P&ID</th>
+                        <th scope="col">Detalle</th>
+                        <th scope="col">Ejecutado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">TCNP5-001</th>
+                        <td>PPAG-370-PL-Y-372</td>
+                        <td>Se puede abrir ecualización de PDIT-25101. Coordinar con Sala de Control.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="TCNP5_001">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">TCNP5-002</th>
+                        <td>PPAG-370-PL-Y-372</td>
+                        <td>Se puede drenar hacia el KOD. Se recomienda con equipo detenido.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="TCNP5_002">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">TCNP5-005</th>
+                        <td>PPAG-370-PL-Y-372</td>
+                        <td>Se puede ecualizar y purgar LIT-25104. Coordinar con Sala de Control.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="TCNP5_005">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">TCNP5-006</th>
+                        <td>PPAG-370-PL-Y-372</td>
+                        <td>Se puede bloquear y drenar LG-25104.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="TCNP5_006">
+                            </div>
+                        </td>
+                      </tr>
+                </table>
+                <br>
+                <h4>TCS 6</h4>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">P&ID</th>
+                        <th scope="col">Detalle</th>
+                        <th scope="col">Ejecutado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">TCS6-003</th>
+                        <td>PCSE-370-PL-Y-376</td>
+                        <td>Se puede drenar hacia el KOD.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="TCS6_003">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">TCS6-004</th>
+                        <td>PCSE-370-PL-Y-376</td>
+                        <td>Se puede drenar hacia el KOD.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="TCS6_004">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">TCS6-012</th>
+                        <td>PCSE-370-PL-Y-377</td>
+                        <td>Se puede drenar hacia el KOD.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="TCS6_012">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">TCS6-013</th>
+                        <td>PCSE-370-PL-Y-377</td>
+                        <td>Se puede drenar hacia el KOD.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="TCS6_013">
+                            </div>
+                        </td>
+                      </tr> 
+                </table>
+                <br>
+                <h4>TCS 7</h4>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">P&ID</th>
+                        <th scope="col">Detalle</th>
+                        <th scope="col">Ejecutado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">TCS7-002</th>
+                        <td>PCSE-370-PL-Y-386</td>
+                        <td>Se puede drenar hacia el KOD.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="TCS7_002">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">TCS7-003</th>
+                        <td>PCSE-370-PL-Y-386</td>
+                        <td>Se puede drenar hacia el KOD.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="TCS7_003">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">TCS7-007</th>
+                        <td>PCSE-370-PL-Y-387</td>
+                        <td>Se puede drenar hacia el KOD.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="TCS7_007">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">TCS7-010</th>
+                        <td>PCSE-370-PL-Y-387</td>
+                        <td>Se puede drenar hacia el KOD.</td>
+                        <td>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="TCS7_010">
+                            </div>
+                        </td>
+                      </tr>
+                </table>
+                
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input" type="checkbox" id="obs_TC2">
+                    <label class="form-check-label" for="obs_TC2">Presenta observaciones</label>
+                </div>
+                <div class="mb-3 mt-3">
+                    <textarea 
+                        class="form-control" id="text_obs_TC2" rows="4" 
+                        autofocus autocomplete="on" maxlength="255" placeholder="Colocar las observaciones encontradas o motivos por lo que no se pudo realizar el drenaje. Máximo 255 caracteres."></textarea>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto mb-5">
+                  <button class="btn btn-primary me-md-2" type="submit" value="enviar_form_TC2" role="button">Guardar</button>
+                  <a class="btn btn-secondary  me-md-2" type="button" href="javascript: history.back()">Cancelar</a>
+                </div>
+            </form>
+            <!-- <br>
+            <h4>Formatos</h4>
+            <aside>
+                <embed src="../../files/PDF Dead Leg/Consolidado Dead Leg - TCNP5.pdf" type="application/pdf" width="100%" height="800px" />
+                <hr>
+                <embed src="../../files/PDF Dead Leg/Consolidado Dead Leg - TCS6.pdf" type="application/pdf" width="100%" height="800px" />
+                <hr>
+                <embed src="../../files/PDF Dead Leg/Consolidado Dead Leg - TCS7.pdf" type="application/pdf" width="100%" height="800px" />
+                <hr>
+            </aside> -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../../js/Estancos/CRUD_estancos_TC2.js"></script>
+</body>
+</html>
